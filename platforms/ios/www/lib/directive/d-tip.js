@@ -1,0 +1,3 @@
+/*! p2p 2015-01-16 */
+angular.module(Constant.DIRECTIVE).directive(Constant.D_TIP,function(){var a=function(a){a.message=a.data.message,a.cssTip=a.data.cssTip,a.$watch("data.count",function(){a.message=a.data.message,a.cssTip=a.data.cssTip,setTimeout(function(){a.cssTip=""},3e3)})};return{restrict:"E",templateUrl:"view/directive/d-tip.html",scope:{data:"=ngModel"},replace:!0,link:a}});
+/*! p2p 最后修改于： 2015-01-16 */

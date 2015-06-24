@@ -1,0 +1,3 @@
+/*! p2p 2015-01-16 */
+angular.module(Constant.SERVICE).factory(Constant.SERVICE_PROJECT,["$http",function(a){var b=(Constant.URL,"GET"),c=function(b,c,d){return a({url:Common.getURL(b),method:c,params:d})};return{query:function(a){return c(Constant.URL_PROJECT_LIST,b,a)},detail:function(a){return c(Constant.URL_PROJECT_DETAIL,b,a)},tender:function(a){return c(Constant.URL_MEMBER_TENDER,b,a)},repayment:function(a){return c(Constant.URL_MEMBER_REPAYMENT,b,a)},repaymentFinish:function(a){return c(Constant.URL_MEMBER_REPAYMENT_FINISH,b,a)}}}]);
+/*! p2p 最后修改于： 2015-01-16 */

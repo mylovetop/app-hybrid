@@ -1,0 +1,3 @@
+/*! p2p 2015-01-16 */
+angular.module(Constant.SERVICE).factory(Constant.SERVICE_USER,["$http",function(a){var b=(Constant.URL,"GET"),c="POST",d=function(b,c,d){return a({url:Common.getURL(b),method:c,params:d})};return{login:function(a){return d(Constant.URL_MEMBER_LOGIN,c,a)},logout:function(a){return d(Constant.URL_MEMBER_LOGOUT,b,a)},memberCenter:function(a){return d(Constant.URL_MEMBER_CENTER,b,a)},isLogin:function(a){return d(Constant.URL_MEMBER_IS_LOGIN,b,a)},updateVersion:function(){return d(Constant.URL_VERSION,b)}}}]);
+/*! p2p 最后修改于： 2015-01-16 */
